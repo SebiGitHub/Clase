@@ -1,0 +1,38 @@
+package unico;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String palabra1;
+		String palabra2;
+		String masCorta;
+		String p1;
+		String p2;
+		
+		palabra1 = "Margarita";
+		palabra2 = "Rosa";
+		
+		masCorta = palabraMasCorta(palabra1, palabra2);
+		
+		System.out.println("La palabra mas corta: " + masCorta);
+
+	}
+
+	private static String palabraMasCorta(String palabra1, String palabra2) {
+
+		int long1; //Longitud de la p1
+		int long2; //Longitud de la p2
+		
+		String mc; //Contendra la palabra mas corta
+		
+		long1 = p1.lenght();
+		long2 = p2.lenght();
+		
+		mc = (long1 < long2) ? p1:p2;
+		
+		return mc;
+		
+		return null;
+	}
+
+}

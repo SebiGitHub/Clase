@@ -1,0 +1,61 @@
+package unico;
+/**
+ * Implementar un método que decida si dos números enteros positivos son amigos. 
+ * Dos números son amigos si la suma de los divisores propios (distinto de él mismo) 
+ * del primer número es igual al segundo número, y viceversa. 
+ * Ejemplos: (220 - 284), (1184 - 1210)
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+		long numero;
+		while (true) {
+            numero = Entrada.pedirEntero("Introduce un número (0 para salir): ");
+            
+            if (numero == 0) {
+                System.out.println("Fin del programa.");
+                break;
+            }
+
+            if (numero > 0) {
+                int sumaPares = sumaDigitosPares(numero);
+                int sumaImpares = sumaDigitosImpares(numero);
+
+                System.out.println("Suma de los dígitos pares: " + sumaPares);
+                System.out.println("Suma de los dígitos impares: " + sumaImpares);
+            } else {
+                System.out.println("Por favor, introduzca un número entero positivo.");
+            }
+        }
+    }
+
+    public static int sumaDigitosPares(long numero) {
+        return sumaDigitosPorParidad(numero, true);
+    }
+
+    public static int sumaDigitosImpares(long numero) {
+        return sumaDigitosPorParidad(numero, false);
+    }
+
+    private static int sumaDigitosPorParidad(long numero, boolean par) {
+        int suma = 0;
+
+        while (numero > 0) {
+            int digito = (int) (numero % 10);
+
+            if ((digito % 2 == 0) == par) {
+                suma += digito;
+            }
+
+            numero /= 10;
+        }
+
+        return suma;
+    }
+
+	
+	
+
+
+
+}

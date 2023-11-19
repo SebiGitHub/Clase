@@ -1,0 +1,40 @@
+package unico;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+/*
+ * Ejercicio 6: Extraer todos los números de una cadena ("Tenemos 5 manzanas y 3 peras en la caja.").
+ */
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String cadena = "Tenemos 5 manzanas y 3 peras en la caja.";
+        int[] numeros = extraerNumeros(cadena);
+
+        System.out.println("Números extraídos:");
+        for (int numero : numeros) {
+            System.out.println(numero);
+        }
+    }
+
+    public static int[] extraerNumeros(String cadena) {
+        // Utilizar la expresión regular para encontrar todos los números en la cadena
+        String patronNumeros = "\\d+";
+        Pattern pattern = Pattern.compile(patronNumeros);
+        Matcher matcher = pattern.matcher(cadena);
+
+        // Almacenar los números extraídos en una lista
+        int[] numeros = new int[matcher.groupCount()];
+        int index = 0;
+
+        // Iterar sobre las coincidencias y convertir a números enteros
+        while (matcher.find()) {
+            numeros[index++] = Integer.parseInt(matcher.group());
+        }
+
+        return numeros;
+    }
+
+}

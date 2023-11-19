@@ -1,0 +1,40 @@
+package unico;
+
+/*Implementar un método que reciba el nombre completo (nombre y apellidos) 
+ * introducido por el usuario. El método debe eliminar cualquier vocal del nombre. 
+ * Por ejemplo: "Álvaro Pérez" se mostrará como "lvr Prz". 
+ * Sólo se eliminarán las vocales (mayúsculas, minúsculas y acentuadas). 
+ * El resto de caracteres no se modifican.
+ * */
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String frase;
+		String fraseSinVocales;
+
+		frase = "Habia una vez un ser maquiavelico";
+
+		fraseSinVocales = quitarVocales(frase);
+
+		System.out.println("Sin vocales: " + fraseSinVocales);
+
+	}
+
+	private static String quitarVocales(String str) {
+
+		String strFinal = "";
+		String quitar = "aeiou";
+		String letra = "";
+
+		for (int i = 0; i < str.length(); i++) {
+			letra = str.substring(i , i + 1);
+			if (!quitar.contains(letra)) {
+				
+			}
+		}
+
+		return strFinal;
+	}
+
+}

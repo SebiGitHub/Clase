@@ -1,0 +1,77 @@
+package unico;
+/**
+ * Implementa el método piramideNumeros que imprime una pirámide de números con n filas como en la siguiente figura:
+
+	Introduzca tamaño de la pirámide: 4
+   	   1
+  	  121
+ 	 12321
+	1234321
+
+	Introduzca tamaño de la pirámide: 0
+	fin del programa.
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+		int altura;
+	
+		while (true) {
+			altura = Entrada.pedirEntero("Introduce un tamaño de la pirámide (0 para salir): ");
+		
+			if (altura >= 3 && altura % 2 != 0) {
+                diamante(altura);
+                break;
+            } else {
+                System.out.println("Error: La altura debe ser un número impar mayor o igual a 3. Inténtelo de nuevo.");
+            }
+        }
+    }
+
+    public static void diamante(int n) {
+        int espaciosExternos = n / 2;
+        int espaciosInternos = 1;
+
+        // Parte superior del rombo
+        for (int i = 0; i < n / 2 + 1; i++) {
+            imprimirEspacios(espaciosExternos);
+            System.out.print("*");
+
+            if (i > 0) {
+                imprimirEspacios(espaciosInternos);
+                System.out.print("*");
+            }
+
+            System.out.println();
+            espaciosExternos--;
+            espaciosInternos += 1;
+        }
+
+        // Parte inferior del rombo
+        espaciosExternos = 1;
+        espaciosInternos = n - 4;
+
+        for (int i = 0; i < n / 2; i++) {
+            imprimirEspacios(espaciosExternos);
+            System.out.print("*");
+
+            if (i < n / 2 - 1) {
+                imprimirEspacios(espaciosInternos);
+                System.out.print("*");
+            }
+
+            System.out.println();
+            espaciosExternos++;
+            espaciosInternos -= 1;
+        }
+    }
+
+    private static void imprimirEspacios(int n) {
+        for (int i = 0; i < n; i++) {
+            System.out.print(" ");
+        }
+    }
+
+
+
+}

@@ -1,0 +1,30 @@
+package unico;
+
+/**
+ * Implementa un método llamado arbolNavidad que pinte por pantalla un árbol de
+ * navidad. El usuario debe introducir la altura. En esa altura va incluida la
+ * estrella y el tronco. Suponemos que el usuario introduce una altura mayor o
+ * igual a 4. Si la altura no es correcta se volverá a pedir hasta que el
+ * usuario introduzca una altura correcta.
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+
+		String opc;
+		int a;
+
+		opc = Entrada.pedirCadena("Introduzca un mes: ");
+
+		a = mes(opc);
+		System.out.println("Recordatorio:");
+
+		
+	}
+
+	
+	public static int mes(String mes) {
+		
+		return 0;
+	}
+}

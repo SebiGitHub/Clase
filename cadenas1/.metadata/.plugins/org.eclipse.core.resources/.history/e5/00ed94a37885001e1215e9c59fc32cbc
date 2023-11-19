@@ -1,0 +1,66 @@
+package unico;
+
+/*Realizar un programa que haga lo siguiente:
+
+Crear un StringBuilder con la cadena "Alabí Alixar" y mostrarla por consola.
+Mostrar por consola su capacidad y longitud.
+Partiendo de la cadena anterior y usando los métodos de StringBuilder modificar la cadena para que pase a ser "Chicharrones de Chiclana" y mostrarla por consola.
+Partiendo de la cadena anterior y usando los métodos de StringBuilder modificar la cadena para que pase a ser "Hay 5000 Chicharrones" y mostrarla por consola. El número entero 5000 debe estar almacenado en un int inicialmente.
+Partiendo de la cadena anterior y usando los métodos de StringBuilder modificar la cadena para que pase a ser "Hay 5000 Chicharrones en Chiclana" y mostrarla por consola.
+Almacenar en un String los últimos 4 caracteres del StringBuilder resultante y mostrar ese String por consola.
+Mostrar por consola la capacidad y longitud del StringBuilder final.
+Realizar el mismo ejercicio con la clase StringBuffer.
+ * */
+
+public class Principal {
+
+	public static void main(String[] args) {
+
+		String frase = "Hola buena nosheeee   javalén, len, len";
+
+		System.out.println(frase);
+
+		if (esIdiomaJavalandia(frase)) {
+			System.out.println("La frase está en el idioma de Javalandia.");
+			String mensajeTraducido = traducir(frase);
+			System.out.println("Mensaje traducido: " + mensajeTraducido);
+		} else {
+			System.out.println("La frase no está en el idioma de Javalandia.");
+		}
+	}
+
+	private static boolean esIdiomaJavalandia(String frase) {
+		boolean es = false;
+		if (frase.startsWith("Javalín, javalón") || frase.endsWith("javalén, len, len")) {
+			es = true;
+		}
+
+		return es;
+	}
+
+	private static String traducir(String frase) {
+		String traduccion = "No se puede traducir";
+		String tmp;
+
+		if (frase.startsWith("Javalín, javalón")) {
+
+			// Manera1
+			tmp = frase.substring(16);
+			tmp = tmp.trim();
+			traduccion = tmp;
+
+			// Manera 2
+			traduccion = frase.substring(16).trim();
+
+		}
+
+		if (frase.endsWith("javalén, len, len")) {
+			tmp = frase.substring(0, frase.length() - 17);
+			tmp = tmp.trim();
+			traduccion = tmp;
+		}
+
+		return traduccion;
+	}
+
+}

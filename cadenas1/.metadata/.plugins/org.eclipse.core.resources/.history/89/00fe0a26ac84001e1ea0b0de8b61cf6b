@@ -1,0 +1,58 @@
+package unico;
+
+/*Diseñar el juego "Acierta la contraseña". El primer jugador introduce una contraseña, 
+ * el segundo, debe insertar otra intentando acertarla con las pistas que le dará el programa: 
+ * número de caracteres, primera y última letra. 
+ * El programa debe escribir "Acertaste" o "Fallaste".
+
+Ampliación: Se debe escribir "Acertaste" o "Menor" o "Mayor", según la palabra introducida sea menor alfabéticamente que la contraseña, o mayor.
+ * */
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String contraseña;
+		boolean aciertoofallo;
+		
+		contraseña = Entrada.pedirCadena("Escribe una contraseña alfabetica: ");
+		
+		aciertoofallo = proceso(contraseña);
+
+		System.out.println(aciertoofallo ? "Acertaste":"Fallaste");
+
+	}
+
+	private static boolean proceso(String str) {
+		String intentodecontraseña;
+		int caracteres = 0;
+		String letrainicial = "";
+		String letrafinal = "";
+		
+		for(int i = 0; i < str.length(); i++) {
+			caracteres++;
+			
+			while (i == 1) {
+				letrainicial = "a";
+			}
+			while (i == str.length()) {
+				letrafinal = "b";
+			}
+		}
+		
+		
+		
+		System.out.println("La contraseña contiene " + caracteres + " caracteres");
+		System.out.println("Empieza por " + letrainicial + " y acaba por " + letrafinal);
+		
+		intentodecontraseña = Entrada.pedirCadena("Adivina la contraseña: ");
+		
+		if (intentodecontraseña == str) {
+			return true;
+		}else {
+			return false;
+		}
+
+		
+	}
+
+}

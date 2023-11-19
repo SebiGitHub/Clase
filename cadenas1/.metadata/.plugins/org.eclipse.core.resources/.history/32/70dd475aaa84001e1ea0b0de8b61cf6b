@@ -1,0 +1,32 @@
+package unico;
+
+/*Diseñar el juego "Acierta la contraseña". El primer jugador introduce una contraseña, 
+ * el segundo, debe insertar otra intentando acertarla con las pistas que le dará el programa: 
+ * número de caracteres, primera y última letra. 
+ * El programa debe escribir "Acertaste" o "Fallaste".
+
+Ampliación: Se debe escribir "Acertaste" o "Menor" o "Mayor", según la palabra introducida sea menor alfabéticamente que la contraseña, o mayor.
+ * */
+
+public class Principal {
+
+	public static void main(String[] args) {
+		String contraseña;
+		String fraseSinVocales;
+
+		frase = "Habia una vez un ser maquiavelico";
+
+		fraseSinVocales = quitarVocales(frase);
+
+		System.out.println("Sin vocales: " + fraseSinVocales);
+
+	}
+
+	private static String quitarVocales(String str) {
+
+		
+
+		return strFinal;
+	}
+
+}

@@ -1,0 +1,56 @@
+package unico;
+
+/**
+ * Implementa un método llamado arbolNavidad que pinte por pantalla un árbol de
+ * navidad. El usuario debe introducir la altura. En esa altura va incluida la
+ * estrella y el tronco. Suponemos que el usuario introduce una altura mayor o
+ * igual a 4. Si la altura no es correcta se volverá a pedir hasta que el
+ * usuario introduzca una altura correcta.
+ */
+public class Principal {
+
+	public static void main(String[] args) {
+
+        int altura;
+
+        do {
+            altura = Entrada.pedirEntero("Introduce la altura del árbol (mayor o igual a 4): ");
+
+        } while (altura < 4);
+
+        arbolNavidad(altura);
+    }
+
+    public static void arbolNavidad(int altura) {
+        // Imprimir la parte superior del árbol
+        for (int i = 0; i < altura - 1; i++) {
+            for (int j = 0; j < altura - i - 1; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < 2 * i + 1; k++) {
+                if (k == 0 || k == 2 * i) {
+                    System.out.print("^");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+
+        // Imprimir la estrella
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < altura - 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("*");
+        }
+
+        // Imprimir el tronco
+        for (int i = 0; i < altura - 6; i++) {
+            for (int j = 0; j < altura - 1; j++) {
+                System.out.print(" ");
+            }
+            System.out.println("Y");
+        }
+    }
+}
