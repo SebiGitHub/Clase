@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="cadenas1/Ej1/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej2/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej3/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej4/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej5/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej6/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej7/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej8/src"/>
+	<classpathentry kind="src" path="cadenas1/Ej experimento/src"/>
+	<classpathentry kind="src" path="cadenas2/E1/src"/>
+	<classpathentry kind="src" path="cadenas2/E2/src"/>
+	<classpathentry kind="src" path="cadenas2/E3/src"/>
+	<classpathentry kind="src" path="cadenas2/E4/src"/>
+	<classpathentry kind="src" path="cadenas2/E5/src"/>
+	<classpathentry kind="src" path="cadenas2/E6/src"/>
+	<classpathentry kind="src" path="cadenas2/E7/src"/>
+	<classpathentry kind="src" path="cadenas2/E8/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej1/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej10/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej11/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej12/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej13/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej14/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej15/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej16/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej17/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej18/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej19/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej2/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej20/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej21/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej24/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej26/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej27/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej28/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej29/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej3/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej30/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej31/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej33/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej4/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej6/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej7/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ej9/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejercicio aparte/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur1/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur10/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur2/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur3/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur4/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur5/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur6/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur7/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur8/src"/>
+	<classpathentry kind="src" path="estructuramodular/Ejrecur9/src"/>
+	<classpathentry kind="output" path="cadenas1/Ej experimento/bin"/>
+</classpath>
